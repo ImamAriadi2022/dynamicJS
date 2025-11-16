@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 1 - Web Pertama Saya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Halo Dunia!</h1>
+        
+        <p id="mainText">Ini adalah halaman web pertama saya menggunakan HTML.</p>
+        
+        <div class="image-container">
+            <img src="assets/gambar.jpg" alt="Gambar Praktikum" class="main-image">
+        </div>
+        
+        <div class="lists-container">
+            <div class="list-section">
+                <h3>Daftar Unordered (UL):</h3>
+                <ul>
+                    <li>HTML - HyperText Markup Language</li>
+                    <li>CSS - Cascading Style Sheets</li>
+                    <li>JavaScript - Bahasa Pemrograman Web</li>
+                </ul>
+            </div>
+            
+            <div class="list-section">
+                <h3>Daftar Ordered (OL):</h3>
+                <ol>
+                    <li>Belajar HTML</li>
+                    <li>Belajar CSS</li>
+                    <li>Belajar JavaScript</li>
+                    <li>Membuat Project Web</li>
+                </ol>
+            </div>
+        </div>
+        
+        <div class="link-section">
+            <p>Kunjungi: <a href="https://www.google.com" target="_blank">Google</a></p>
+        </div>
+        
+        <div class="buttons-container">
+            <button type="button" onclick="salam()" class="btn btn-primary">Klik Saya</button>
+            <button type="button" onclick="ubahTeks()" class="btn btn-secondary">Ubah Teks</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

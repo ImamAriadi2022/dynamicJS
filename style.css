@@ -1,0 +1,184 @@
+/* Styling Dasar Sesuai Ketentuan */
+body {
+    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+h1 {
+    color: #0077cc;
+    margin: 20px 0;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+/* Container Layout */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Styling Gambar */
+.image-container {
+    margin: 30px 0;
+}
+
+.main-image {
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid #0077cc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Styling Lists */
+.lists-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 30px 0;
+    gap: 20px;
+}
+
+.list-section {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid #0077cc;
+    flex: 1;
+    min-width: 250px;
+}
+
+.list-section h3 {
+    color: #0077cc;
+    margin-top: 0;
+}
+
+ul, ol {
+    text-align: left;
+    padding-left: 20px;
+}
+
+li {
+    margin: 8px 0;
+    padding: 5px 0;
+}
+
+/* Styling Link */
+.link-section {
+    margin: 25px 0;
+    padding: 15px;
+    background: linear-gradient(45deg, #e3f2fd, #bbdefb);
+    border-radius: 10px;
+}
+
+a {
+    color: #0077cc;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #0077cc;
+    color: white;
+    text-decoration: none;
+}
+
+/* Styling Tombol */
+.buttons-container {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    min-width: 120px;
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #0077cc, #0099ff);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(45deg, #005fa3, #0077cc);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.btn-secondary {
+    background: linear-gradient(45deg, #28a745, #34ce57);
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(45deg, #1e7e34, #28a745);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    .lists-container {
+        flex-direction: column;
+    }
+    
+    .buttons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+}
+
+/* Animasi untuk elemen yang berubah */
+#mainText {
+    transition: all 0.5s ease;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.text-changed {
+    background: #d4edda;
+    color: #155724;
+    border: 2px solid #c3e6cb;
+}
